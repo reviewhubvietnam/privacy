@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Shopee Affiliate PRO</title>
+  <style>
+    :root {
+      --primary: #ee4d2d;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 36px 40px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .badge {
+      display: inline-block;
+      background: #fff1ee;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .lang-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .lang-btn {
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+    .section { display: none; }
+    .section.active { display: block; }
+    h2 {
+      font-size: 18px;
+      margin: 26px 0 10px;
+      color: #111827;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+    li { margin-bottom: 6px; }
+    code {
+      background: #f3f4f6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .contact-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-top: 24px;
+    }
+    @media (max-width: 640px) {
+      .card { padding: 24px 20px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="badge">Chrome Extension Privacy Policy</div>
+      <h1>Shopee Affiliate PRO</h1>
+      <div class="meta">
+        <strong>Effective Date / Ngày hiệu lực:</strong> November 13, 2026 &nbsp;|&nbsp;
+        <strong>Developer Contact:</strong> <a href="mailto:reviewhub.vietnam@gmail.com">reviewhub.vietnam@gmail.com</a>
+      </div>
+
+      <div class="lang-tabs">
+        <button class="lang-btn active" onclick="switchLang('en', this)">English (For CWS Review)</button>
+        <button class="lang-btn" onclick="switchLang('vi', this)">Tiếng Việt</button>
+      </div>
+
+      <!-- ENGLISH VERSION -->
+      <div id="lang-en" class="section active">
+        <p>
+          This Privacy Policy explains how the <strong>Shopee Affiliate PRO</strong> Chrome extension
+          ("the Extension", "we", "our") handles data when you use its affiliate link generation,
+          content compliance checking, and media utility features.
+        </p>
+
+        <h2>1. Single Purpose</h2>
+        <p>
+          The Extension is designed for a single purpose: providing productivity tools for Shopee Affiliate
+          publishers to generate shortlinks (<code>s.shopee.vn</code>), manage Sub_id parameters, check
+          caption compliance, and download product media on Shopee pages.
+        </p>
+
+        <h2>2. Data We Process &amp; Collect</h2>
+        <ul>
+          <li>
+            <strong>Website Content (Product Links, Text, Images, Videos):</strong> When you browse
+            <code>shopee.vn</code> or trigger link conversion, the Extension reads public product details
+            (product URLs, titles, prices, images, and videos) on the active page solely to generate
+            your affiliate shortlinks, format captions, or save media locally to your device.
+          </li>
+          <li>
+            <strong>Session Authentication:</strong> The Extension uses your existing authenticated
+            session on <code>affiliate.shopee.vn</code> locally in your browser to invoke Shopee's official
+            link-shortening API on your behalf. We never collect, read, or transmit your Shopee password,
+            PIN, or account credentials to our servers.
+          </li>
+          <li>
+            <strong>Anonymous Hardware Device ID:</strong> For PRO license verification, the Extension
+            computes an anonymous local hardware hash (<code>DEV-XXXXXX</code>) from basic system CPU/memory
+            metadata and sends only this anonymous ID and your license key over HTTPS to our license
+            verification endpoint.
+          </li>
+          <li>
+            <strong>Local Preferences:</strong> Your settings (caption templates, default 5 Sub_ids,
+            compliance filters, and license state) are stored locally on your device via
+            <code>chrome.storage</code>.
+          </li>
+        </ul>
+
+        <h2>3. Data We Do NOT Collect</h2>
+        <p>We do <strong>NOT</strong> collect, store, or transmit:</p>
+        <ul>
+          <li>Personally identifiable information (name, physical address, phone number, national ID).</li>
+          <li>Financial, banking, or credit card information.</li>
+          <li>General web browsing history outside of explicit actions on supported Shopee/AI assistant tabs.</li>
+          <li>Keystrokes, mouse movements, or private personal communications.</li>
+        </ul>
+
+        <h2>4. Data Sharing &amp; Chrome Web Store Limited Use</h2>
+        <ul>
+          <li>We do <strong>NOT</strong> sell, rent, or trade user data to any third parties.</li>
+          <li>We do <strong>NOT</strong> use or transfer user data for advertising, data brokering, or creditworthiness.</li>
+          <li>Data is transmitted only when required to perform the Extension's core user-initiated actions (calling Shopee Affiliate APIs or verifying your license status).</li>
+        </ul>
+
+        <h2>5. Permissions Used</h2>
+        <ul>
+          <li><code>storage</code>: Saves user settings, templates, and license status locally.</li>
+          <li><code>tabs</code> &amp; <code>scripting</code>: Reads active Shopee product pages and injects the floating helper toolbar.</li>
+          <li><code>cookies</code>: Uses your existing <code>affiliate.shopee.vn</code> session to authorize official shortlink API calls.</li>
+          <li><code>downloads</code>: Downloads product images and MP4 videos when you click Download.</li>
+          <li><code>sidePanel</code>, <code>alarms</code>, <code>notifications</code>: Displays the persistent side panel, schedules license checks, and notifies completion status.</li>
+          <li><code>system.cpu</code> &amp; <code>system.memory</code>: Generates an anonymous device hash for single-device license protection.</li>
+        </ul>
+
+        <div class="contact-box">
+          <strong>6. Contact &amp; Data Requests:</strong><br>
+          If you have any questions about this Privacy Policy or wish to request deletion of your license/device record,
+          please contact: <a href="mailto:reviewhub.vietnam@gmail.com">reviewhub.vietnam@gmail.com</a>.
+        </div>
+      </div>
+
+      <!-- VIETNAMESE VERSION -->
+      <div id="lang-vi" class="section">
+        <p>
+          Chính sách Bảo mật này giải thích cách tiện ích mở rộng <strong>Shopee Affiliate PRO</strong>
+          xử lý dữ liệu khi bạn sử dụng các tính năng tạo link rút gọn, kiểm tra từ cấm và tải media sản phẩm.
+        </p>
+
+        <h2>1. Mục đích đơn nhất (Single Purpose)</h2>
+        <p>
+          Tiện ích chỉ phục vụ một mục đích duy nhất: hỗ trợ nhà tiếp thị liên kết (Shopee Affiliate Publisher)
+          tạo link rút gọn <code>s.shopee.vn</code>, gắn 5 Sub_id, kiểm tra nội dung bài viết và tải ảnh/video sản phẩm.
+        </p>
+
+        <h2>2. Dữ liệu được xử lý</h2>
+        <ul>
+          <li>
+            <strong>Nội dung trang web (Website Content):</strong> Khi bạn truy cập <code>shopee.vn</code> hoặc bấm
+            đảo link, tiện ích chỉ đọc thông tin công khai của sản phẩm (URL, tên, giá, ảnh, video) trên tab hiện tại
+            để tạo link affiliate hoặc tải về máy của bạn.
+          </li>
+          <li>
+            <strong>Phiên đăng nhập Shopee Affiliate:</strong> Tiện ích sử dụng trực tiếp phiên đăng nhập hợp lệ sẵn có
+            của bạn trên <code>affiliate.shopee.vn</code> để gọi API rút gọn link chính thức. Chúng tôi tuyệt đối không
+            thu thập mật khẩu, mã PIN hay thông tin tài khoản của bạn.
+          </li>
+          <li>
+            <strong>Mã thiết bị ẩn danh (Device Hash):</strong> Để xác thực bản quyền PRO, tiện ích tạo một mã băm phần
+            cứng ẩn danh (<code>DEV-XXXXXX</code>) và gửi cùng mã bản quyền qua kết nối mã hóa HTTPS tới máy chủ xác thực.
+          </li>
+          <li>
+            <strong>Lưu trữ cục bộ:</strong> Mẫu caption, cấu hình Sub_id và trạng thái bản quyền được lưu ngay trên
+            trình duyệt của bạn thông qua <code>chrome.storage</code>.
+          </li>
+        </ul>
+
+        <h2>3. Cam kết KHÔNG thu thập &amp; KHÔNG chia sẻ</h2>
+        <ul>
+          <li><strong>Không</strong> thu thập họ tên, số điện thoại, địa chỉ, thẻ ngân hàng hay lịch sử duyệt web cá nhân.</li>
+          <li><strong>Không</strong> bán, cho thuê hoặc chia sẻ dữ liệu cho bên thứ ba phục vụ quảng cáo hay môi giới dữ liệu.</li>
+          <li><strong>Không</strong> sử dụng dữ liệu ngoài phạm vi tính năng cốt lõi mà người dùng chủ động thao tác.</li>
+        </ul>
+
+        <div class="contact-box">
+          <strong>4. Thông tin liên hệ:</strong><br>
+          Mọi thắc mắc về quyền riêng tư hoặc yêu cầu hỗ trợ dữ liệu bản quyền, vui lòng liên hệ:
+          <a href="mailto:reviewhub.vietnam@gmail.com">reviewhub.vietnam@gmail.com</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang, btn) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
+      document.getElementById('lang-' + lang).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
